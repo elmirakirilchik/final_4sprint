@@ -52,7 +52,8 @@ func DayActionInfo(data string, weight, height float64) string {
 
 	distance := float64(steps) * stepLength / mInKm
 
-	// формула из тестов
+	// формула калорий по тестам
+
 	calories := distance * weight * 0.605
 
 	return fmt.Sprintf(

@@ -24,7 +24,7 @@ func parseTraining(data string) (int, string, time.Duration, error) {
 		return 0, "", 0, errors.New("invalid format")
 	}
 
-	// steps
+	// расчет шагов
 	steps, err := strconv.Atoi(parts[0])
 	if err != nil {
 		return 0, "", 0, err
